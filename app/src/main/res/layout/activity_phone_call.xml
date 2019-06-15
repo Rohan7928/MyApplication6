@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_call">
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:hint="Enter Mobile Number"
+    android:inputType="phone"
+    android:elevation="5dp"
+    android:id="@+id/number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginBottom="50dp"
+        android:text="Call"
+        android:onClick="onDialButton"
+        android:id="@+id/call"
+        tools:ignore="OnClick" />
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/date_picker">
+
+    </DatePicker>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Current Date"
+        android:layout_below="@+id/date_picker"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/current_date"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_date"
+       android:layout_centerInParent="true"
+        android:text="Change Date"
+        android:onClick="onDialButton"
+        android:id="@+id/change_date"
+        tools:ignore="OnClick" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textOff="off"
+        android:textOn="on"
+        android:id="@+id/toggle1"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+     android:textOff="off"
+        android:textOn="on"
+        android:id="@+id/toggle2"
+        android:layout_marginRight="90dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginBottom="55dp"
+        android:text="Get-Toggle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/get_toggle"
+        tools:ignore="OnClick" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/ratebar"/>
+
+</RelativeLayout>

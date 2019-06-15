@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Camera"
+        android:textSize="20dp"
+        android:id="@+id/Camera"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Chat"
+        android:id="@+id/Chat"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Status"
+        android:id="@+id/Status"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Call"
+        android:id="@+id/Call"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+</LinearLayout>
